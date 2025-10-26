@@ -1,8 +1,5 @@
 // src/lib/api.ts
-const BASE =
-  (import.meta as any).env?.VITE_API_URL ??
-  (typeof process !== "undefined" ? process.env.NEXT_PUBLIC_API_URL : "") ??
-  "http://127.0.0.1:8000";
+const BASE = import.meta.env.VITE_API_URL || "https://back-hackmty25.onrender.com";
 
 export type Channel = "atm" | "branch" | "online" | "present" | "unknown";
 
